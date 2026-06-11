@@ -3,7 +3,7 @@ import numpy as np
 import math
 
 class MetrologiaArUco:
-    def __init__(self, dict_type=cv2.aruco.DICT_4X4_50, marker_size_cm=5.0):
+    def __init__(self, dict_type=cv2.aruco.DICT_6X6_50, marker_size_cm=5.0):
         self.dictionary = cv2.aruco.getPredefinedDictionary(dict_type)
         self.parameters = cv2.aruco.DetectorParameters()
         self.detector = cv2.aruco.ArucoDetector(self.dictionary, self.parameters)

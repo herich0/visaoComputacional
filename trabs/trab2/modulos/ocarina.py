@@ -3,7 +3,7 @@ import pygame
 
 class OcarinaVirtual:
     def __init__(self, audio_paths, ref_id=0, hole_ids=(1, 2, 3, 4)):
-        self.dictionary = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
+        self.dictionary = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_50)
         self.parameters = cv2.aruco.DetectorParameters()
         self.detector = cv2.aruco.ArucoDetector(self.dictionary, self.parameters)
         self.ref_id = ref_id
